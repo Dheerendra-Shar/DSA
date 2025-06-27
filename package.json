@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "learning dsa",
+  "main": "index.js",
+  "devDependencies": {},
+"scripts": {
+  "start": "nodemon index.js",
+  "dev": "nodemon index.js"
+},
+  "author": "Dheerendra",
+  "license": "ISC"
+}
