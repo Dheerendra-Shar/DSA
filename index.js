@@ -31,7 +31,8 @@ for( let i =0 ; i<length ; i++){
 // }
 
 // require('./searchelement')
-require("./loopinloop")
+// require("./loopinloop");
+require("./starpattern")
 
 
 
