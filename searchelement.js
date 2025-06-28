@@ -2,75 +2,83 @@
  * 
  * write a function that searches for an element in and array and return the index if the element is not present then just return -1
  */
-// let index
 // function searchElement(arr , num){
-// for(let i=0; i < arr.length ; i++){
-//     // console.log('i: ', i+ " "+ arr[i]);
-//     if(num == arr[i]){
-//         index = i
-//         return index
+//   for(let i=0; i < arr.length; i++){
+//     if(arr[i] == num){
+//       return i
 //     }
-  
-  
-// }
-// return -1
+//   }
+//   return -1;
 // }
 
-// let arr = [4,2,0,10,8,30]
-
-// let result = searchElement(arr,49);
-// console.log('result: ', result);
+// let arr = [4,2,0,10,8,30];
+// let result = searchElement(arr,10);
 
 
 /** write a function that returns the number of negative number in an array  */
 
 // function countNegatives(arr){
-//     let count = 0
-//  for(let i=0 ; i<arr.length; i++){
-
-//     if(arr[i] < 0){
-//        count++
-      
-//     }
-
-// }
-// return count++
-
+//   let count = 0
+//  for(let i=0 ; i< arr.length; i++){
+//   if(arr[i] < 0 ){
+//     count++
+//   }
+//  }
+//  return count
 
 // }
  
 
-// let narr= [2,-9,17,0,1,-10,-4,8]
+// let narr= [2,-9,17,0,1,-10,-4,-8]
 // let result = countNegatives(narr)
-// console.log('result: ', result);
 
 
 /** write a function that return the largest number from any array */
-// let count = 0
 // function findLargest(arr){
-//     for(let i=0; i<arr.length; i++){
-//        if(arr[i] > arr[0]){
-//          count = arr[i]
-//        }
-//     }
-//     return count
+//  let largest = arr[0]
+//  for(let i = 0;i<arr.length ; i++){
+//    if(arr[i] > largest){
+//     largest = arr[i]
+//    }
+//  }
+//  return largest
 
-// }
-// let arr = [5,0,10,8,1,20,50]
-// let res = findLargest(arr)
-// console.log('res: ', res);
+//  }
+//  let arr = [5,0,10,8,1,20,50,100,101]
+//  let res = findLargest(arr)
 
 /** write a function that return the smallest number from any array */
-function findLargest(arr){
-    let count = arr[0]
-    for(let i=0; i<arr.length; i++){
-       if(arr[i] < count){
-         count = arr[i]
-       }
-    }
-    return count
+// function findSmallest(arr){
+//   let smallest = arr[0]
+//  for(let i = 0; i<arr.length; i++){
+//    if(arr[i] < smallest){
+//      smallest = arr[i];
+//    }
+//  }
+//  return smallest
 
+// }
+// let arr = [20,50,3,6,5,1]
+// let res = findSmallest(arr)
+
+// find Second largest number in an array 
+function secondLargest(arr){
+  if(arr.length<2){
+    return null
+  }
+    let firstLargest = -Infinity;
+    let secondLargest = -Infinity;
+    for(let i=0;i<arr.length;i++){
+      if(arr[i]> firstLargest){
+        secondLargest = firstLargest
+        firstLargest = arr[i] 
+      }
+      else if( arr[i] > secondLargest && arr[i] != firstLargest){
+        secondLargest =arr[i];
+      }
+    }
+    return secondLargest;
 }
-let arr = [10,20,50]
-let res = findLargest(arr)
+let arr = [4,6,0,2,7,8,8,1]
+let res = secondLargest(arr)
 console.log('res: ', res);
