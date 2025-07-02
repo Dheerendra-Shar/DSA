@@ -32,7 +32,8 @@ for( let i =0 ; i<length ; i++){
 
 // require('./searchelement')
 // require("./loopinloop");
-require("./starpattern")
+// require("./starpattern")
+require('./countdigit')
 
 
 
