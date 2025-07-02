@@ -106,22 +106,25 @@
 // 1 0 1 0 1
 // 1 0 1 0 1 0
 
-n=5
-let value = 1;
-for(let i=0; i<n; i++){
-    let row = "";
+// n=5
+// for(let i=0;i<n ;i++){
+//     let row = "";
+//         let value = 1;
 
-    for(j=0 ; j<i+1; j++){
-        row = row + value
-        if(value == 1){
-            value = 0
-        }
-        else{
-            value =1
-        }
-    }
-    console.log(row);
-}
+//     for(let j=0; j<i+1;j++){
+//         row = row+value
+
+//         if(value ==0){
+//             value =1
+//         }
+//         else{
+//             value =0
+//         }
+//     }
+//     console.log('row: ', row);
+
+// }
+ 
 
 
 
