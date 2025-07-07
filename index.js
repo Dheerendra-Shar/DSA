@@ -33,7 +33,8 @@ for( let i =0 ; i<length ; i++){
 // require('./searchelement')
 // require("./loopinloop");
 // require("./starpattern")
-require('./countdigit')
+// require('./countdigit')
+require("./palindrome")
 
 
 
